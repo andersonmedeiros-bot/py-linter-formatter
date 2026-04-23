@@ -3,7 +3,7 @@ def format_linter_error(error: dict) -> dict:
         "line": error["line_number"],
         "column": error["column_number"],
         "message": error["text"],
-        "type": error["code"],
+        "name": error["code"],
         "source": "flake8"
     }
 
